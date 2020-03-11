@@ -1,0 +1,174 @@
+body {
+    background-color: #EEEEEE;
+    font-family: 'Roboto Slab', 'serif'; 
+}
+
+/* header */
+header {
+    background-color: #fa4659;
+    margin-bottom: 10px; 
+}
+
+header nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: #EEEEEE;
+    text-transform: uppercase; 
+}
+
+header nav form {
+    display: inline-block;
+}
+
+header nav form input {
+    margin: 10px; 
+    padding: 4px 8px 4px 8px; 
+    color: #fa4659; 
+    border: none; 
+    border-radius: 15px;  
+}
+
+header nav a:visited {
+    text-decoration: none;
+}
+
+header nav a#home {
+    font-size: 40px;
+}
+
+/* main page */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div.thumbnail {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fa4659;
+    border-radius: 15px;
+    max-width: 220px;
+
+}
+
+main div.thumbnail a {
+    text-decoration: none; 
+} 
+
+main div.thumbnail p {
+    background-color: #EEEEEE;
+    border-radius: 15px; 
+    padding: 4px; 
+    text-align: center;
+    color: #fa4659;
+    text-transform: uppercase; 
+}
+
+main div.thumbnail img {
+    width: 100%;
+} 
+
+/* page individuelle */
+main div.row {
+    width: 100%; 
+    padding: 0 10px 0 10px;  
+}
+
+main div.row h1 {
+    text-transform: uppercase; 
+    color: #fa4659;
+}
+
+main div.row a {
+    text-decoration: none; 
+    color: #fa4659;
+}
+
+main div.row--details {
+    display: flex;
+    flex-direction: column; 
+    max-width: 25%; 
+}
+
+main div.row--details img {
+    padding: 1%;
+    flex: 2;
+}
+
+main div.row--details div.details {
+    background-color: #fa4659;
+    flex: 3;
+    margin: 3%;
+    border-radius: 15px;
+    text-align: left;
+    padding: 0 25px 25px 25px;
+}
+
+/* details de la page individuelle */
+.details .name {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #EEEEEE; 
+    text-transform: uppercase; 
+}
+
+.details .caption--stats {
+    font-size: 20px;
+    margin: 25px 0;
+    color: #EEEEEE; 
+}
+
+.stats  {
+    display: flex;
+    margin: 5px 0;
+    color: #EEEEEE; 
+}
+
+
+.stats .stats-name {
+    flex: 3;
+}
+
+.stats .stats-number {
+    flex: 1;
+}
+
+.stats .stats-base {
+    flex: 4;
+    background-color: #e03848;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+} 
+
+.stats .stats-base .stats-percent {
+    background-color: white;
+    height: 100%;
+}
+
+/* types */
+.details .types .type {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff; 
+    box-shadow: 3px 3px 0px 0px rgba(224, 56, 72, 1); 
+}
+
+.link--type {
+    padding: 25px;
+    min-width: 20%;
+    margin: 5px 0;
+    border-radius: 15px;
+    color: #EEEEEE; 
+    text-decoration: none; 
+    text-align: center; 
+}

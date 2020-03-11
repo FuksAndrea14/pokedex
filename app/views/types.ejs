@@ -1,0 +1,9 @@
+<%- include('partials/header') %> 
+
+<% for (let type of types) { %>
+    <a href="/type/<%= type.id %>" class="link--type" style="background-color: #<%= type.color %>;">
+        <%= type.name %>
+    </a>
+<% } %>
+
+<%- include('partials/footer') %>
