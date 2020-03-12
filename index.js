@@ -23,9 +23,10 @@ const router = require('./app/router');
 app.use(router); 
 
 // port
-let PORT = process.env.PORT; 
+const PORT = process.env.PORT; 
+
 if (PORT == null || PORT == "") {
-    PORT = 8080; 
+    PORT = 8000; 
 }; 
 
 // serveur
