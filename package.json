@@ -4,6 +4,7 @@
   "description": "Le projet pokédex est un projet reprenant un concept venant de l'univers Pokémon ! Un pokédex est un répertoire, une sorte de dictionnaire regroupant tous les Pokémon (de petites créatures fictives possédant des pouvoirs) ainsi que plusieurs informations les concernant : non seulement leur nom, mais aussi leur apparence, une courte description, leur(s) type(s) (qui définit leurs forces et faiblesses) ainsi que leurs statistiques.",
   "main": "index.js",
   "scripts": {
+	"start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
