@@ -1,22 +1,22 @@
 -- stucture table 'pokemon'
 
-DROP TABLE IF EXISTS "pokemon";
+DROP TABLE IF EXISTS 'pokemon';
 
-CREATE TABLE "pokemon" (
-  "id" int NOT NULL,
-  "nom" varchar(255) NOT NULL,
-  "pv" int NOT NULL,
-  "attaque" int NOT NULL,
-  "defense" int NOT NULL,
-  "attaque_spe" int NOT NULL,
-  "defense_spe" int NOT NULL,
-  "vitesse" int NOT NULL,
-  "numero" int NOT NULL
+CREATE TABLE 'pokemon' (
+  'id' int NOT NULL,
+  'nom' varchar(255) NOT NULL,
+  'pv' int NOT NULL,
+  'attaque' int NOT NULL,
+  'defense' int NOT NULL,
+  'attaque_spe' int NOT NULL,
+  'defense_spe' int NOT NULL,
+  'vitesse' int NOT NULL,
+  'numero' int NOT NULL
 );
 
 -- contenu table 'pokemon'
 
-INSERT INTO "pokemon" ("id", "nom", "pv", "attaque", "defense", "attaque_spe", "defense_spe", "vitesse", "numero") VALUES
+INSERT INTO 'pokemon' ('id', 'nom', 'pv', 'attaque', 'defense', 'attaque_spe', 'defense_spe', 'vitesse', 'numero') VALUES
 (1209, 'Bulbizarre', 45, 49, 49, 65, 65, 45, 1),
 (1210, 'Herbizarre', 60, 62, 63, 80, 80, 60, 2),
 (1211, 'Florizarre', 80, 82, 83, 100, 100, 80, 3),
@@ -173,17 +173,17 @@ INSERT INTO "pokemon" ("id", "nom", "pv", "attaque", "defense", "attaque_spe", "
 
 -- structure table 'pokemon_type'
 
-DROP TABLE IF EXISTS "pokemon_type";
+DROP TABLE IF EXISTS 'pokemon_type';
 
-CREATE TABLE "pokemon_type" (
-  "id" int NOT NULL,
-  "pokemon_numero" int NOT NULL,
-  "type_id" int NOT NULL
+CREATE TABLE 'pokemon_type' (
+  'id' int NOT NULL,
+  'pokemon_numero' int NOT NULL,
+  'type_id' int NOT NULL
 );
 
 -- contenu table 'pokemon_type'
 
-INSERT INTO "pokemon_type" ("id", "pokemon_numero", "type_id") VALUES
+INSERT INTO 'pokemon_type' ('id', 'pokemon_numero', 'type_id') VALUES
 (431, 1, 10),
 (432, 1, 11),
 (433, 2, 10),
@@ -404,17 +404,17 @@ INSERT INTO "pokemon_type" ("id", "pokemon_numero", "type_id") VALUES
 
 -- structure table 'type'
 
-DROP TABLE IF EXISTS "type";
+DROP TABLE IF EXISTS 'type';
 
-CREATE TABLE "type" (
-  "id" int NOT NULL,
-  "name" varchar(255) NOT NULL,
-  "color" varchar(6) NOT NULL
+CREATE TABLE 'type' (
+  'id' int NOT NULL,
+  'name' varchar(255) NOT NULL,
+  'color' varchar(6) NOT NULL
 );
 
 -- contenu table 'type'
 
-INSERT INTO "type" ("id", "name", "color") VALUES
+INSERT INTO 'type' ('id', 'name', 'color') VALUES
 (1, 'Acier', 'aaaabb'),
 (2, 'Combat', 'bb5544'),
 (3, 'Dragon', '7766ee'),

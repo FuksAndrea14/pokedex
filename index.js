@@ -6,6 +6,13 @@ dotenv.config();
 const express = require('express'); 
 const app = express(); 
 
+// for heroku
+const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: true
+});
+
 // réglages ejs 
 app.set('view engine', 'ejs'); 
 app.set('views', 'app/views'); 
